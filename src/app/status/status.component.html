@@ -1,0 +1,13 @@
+<h2>Check Order Status</h2>
+
+Type:<input (keyup)="onKeyType($event)">
+Id:<input (keyup)="onKeyId($event)">
+Timestamp:<input (keyup)="onKeyTs($event)">
+<button (click)="onClick()">Submit</button>
+
+<br><br>
+
+<div>
+  <h3>Response</h3>
+  {{status}}
+</div>

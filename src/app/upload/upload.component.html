@@ -1,0 +1,11 @@
+<h2>Upload Log File</h2>
+
+<input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".csv" >
+<button (click)="uploadLogFile()">Upload</button>
+
+<br><br>
+<div [ngClass]="status ? 'show' : 'hide'">
+  {{msg}}
+</div>
+
+<br><br><br>
